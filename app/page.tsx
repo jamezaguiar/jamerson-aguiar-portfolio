@@ -37,7 +37,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/jamezaguiar/"
                 aria-label="LinkedIn profile"
                 target="_blank"
-                className="hover:text-accent transition"
+                className="hover:text-accent transition inline-flex p-1"
               >
                 <LinkedinIcon size={26} />
               </Link>
@@ -47,7 +47,7 @@ export default function Home() {
                 href="https://github.com/jamezaguiar"
                 aria-label="GitHub profile"
                 target="_blank"
-                className="hover:text-accent transition"
+                className="hover:text-accent transition inline-flex p-1"
               >
                 <GitHubIcon size={26} />
               </Link>

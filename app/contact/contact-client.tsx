@@ -90,7 +90,7 @@ export function ContactClient() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="mt-2 w-fit px-6 py-2 bg-accent text-background font-medium rounded-md hover:opacity-90 transition disabled:opacity-70"
+            className="mt-2 w-fit px-6 py-2 bg-accent text-white font-medium rounded-md hover:opacity-90 transition disabled:opacity-70"
           >
             {isSubmitSuccessful
               ? "Message Sent!"
