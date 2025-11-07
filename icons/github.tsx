@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IconProps } from "../types/icon.types";
 
-const GitHub: React.FC<IconProps> = ({
+const GitHubIcon: React.FC<IconProps> = ({
   size = 24,
   color = "currentColor",
   ...props
@@ -18,4 +18,4 @@ const GitHub: React.FC<IconProps> = ({
   </svg>
 );
 
-export default GitHub;
+export default GitHubIcon;

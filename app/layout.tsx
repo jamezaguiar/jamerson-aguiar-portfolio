@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <Header />
-        <main className="p-8">{children}</main>
+        <main className="py-12">{children}</main>
       </body>
     </html>
   );

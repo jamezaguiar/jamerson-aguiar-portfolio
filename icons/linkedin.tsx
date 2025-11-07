@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IconProps } from "../types/icon.types";
 
-const Linkedin: React.FC<IconProps> = ({
+const LinkedinIcon: React.FC<IconProps> = ({
   size = 24,
   color = "currentColor",
   ...props
@@ -18,4 +18,4 @@ const Linkedin: React.FC<IconProps> = ({
   </svg>
 );
 
-export default Linkedin;
+export default LinkedinIcon;
