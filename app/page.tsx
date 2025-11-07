@@ -8,9 +8,7 @@ import MeshBackground from "@/components/mesh-background";
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between gap-8">
-      {/* Conteúdo principal */}
       <section className="flex flex-col items-center md:items-start text-center md:text-left gap-4 w-full md:w-2/6">
-        {/* Foto */}
         <Image
           src="https://github.com/jamezaguiar.png"
           alt="Jamerson Aguiar"
@@ -20,7 +18,6 @@ export default function Home() {
           priority
         />
 
-        {/* Cabeçalho */}
         <header>
           <h1 className="font-bold text-4xl md:text-5xl">Jamerson Aguiar</h1>
           <h2 className="text-accent text-2xl md:text-3xl mt-1">
@@ -28,13 +25,11 @@ export default function Home() {
           </h2>
         </header>
 
-        {/* Descrição */}
         <p className="leading-relaxed text-foreground/90 max-w-md">
           Building responsive and user-centric web applications with passion and
           precision. I transform ideas into seamless digital experiences.
         </p>
 
-        {/* Links sociais */}
         <nav aria-label="Social links" className="mt-2">
           <ul className="flex gap-4 justify-center md:justify-start">
             <li>
@@ -60,13 +55,11 @@ export default function Home() {
           </ul>
         </nav>
 
-        {/* Botão CV */}
         <div className="mt-4">
           <DownloadCV />
         </div>
       </section>
 
-      {/* Animação mesh — oculta em telas pequenas */}
       <aside className="hidden md:flex w-4/6 text-foreground/70 leading-relaxed">
         <MeshBackground />
       </aside>
