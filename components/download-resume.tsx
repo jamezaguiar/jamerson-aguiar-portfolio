@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 
-export function DownloadCV() {
+export function DownloadResume() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -23,8 +23,8 @@ export function DownloadCV() {
   const handleDownload = (lang: "pt" | "en") => {
     const file =
       lang === "pt"
-        ? "/jamerson-aguiar-curriculum-portuguese.pdf"
-        : "/jamerson-aguiar-curriculum-english.pdf";
+        ? "/jamerson-aguiar-resume-portuguese.pdf"
+        : "/jamerson-aguiar-resume-english.pdf";
     window.open(file, "_blank");
     setOpen(false);
   };
@@ -35,7 +35,7 @@ export function DownloadCV() {
         onClick={() => setOpen((prev) => !prev)}
         className="flex items-center gap-2 bg-accent rounded-sm px-4 py-2 font-bold text-white cursor-pointer hover:opacity-90 transition"
       >
-        Download CV
+        Download Resume
         <ChevronDown
           size={18}
           className={`transition-transform duration-200 ${

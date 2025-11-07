@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DownloadCV } from "../components/download-cv";
+import { DownloadResume } from "../components/download-resume";
 import LinkedinIcon from "@/icons/linkedin";
 import GitHubIcon from "@/icons/github";
 import MeshBackground from "@/components/mesh-background";
@@ -56,7 +56,7 @@ export default function Home() {
         </nav>
 
         <div className="mt-4">
-          <DownloadCV />
+          <DownloadResume />
         </div>
       </section>
 
