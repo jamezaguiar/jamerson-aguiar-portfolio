@@ -29,20 +29,19 @@ export default function ProjectsPage() {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block border border-border bg-background/60 rounded-xl p-6 hover:border-accent hover:shadow-[0_0_12px_-2px_var(--color-accent)] transition-all duration-300"
+            className="group block border border-border bg-background/60 rounded-xl overflow-hidden hover:border-accent hover:shadow-[0_0_12px_-2px_var(--color-accent)] transition-all duration-300"
           >
-            <article className="flex flex-col md:flex-row items-start gap-6">
-              <div className="flex items-center justify-center md:w-36 md:h-24 w-full h-20 bg-background/80 rounded-md border border-border/40 p-3 flex-shrink-0">
+            <article className="flex flex-col md:flex-row items-stretch">
+              <div className="relative md:w-1/3 w-full overflow-hidden bg-background">
                 <Image
                   src={project.logo}
                   alt={`${project.company} logo`}
-                  width={140}
-                  height={80}
-                  className="object-contain group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  className="object-cover md:object-contain p-6 md:rounded-l-xl rounded-t-xl md:rounded-t-none group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
-              <div className="flex-1">
+              <div className="flex-1 p-6 flex flex-col justify-between">
                 <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                   <h2 className="text-xl font-heading font-semibold text-accent group-hover:text-accent/80 transition-colors">
                     {project.company}
